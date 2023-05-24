@@ -69,7 +69,7 @@ body {
 }
 
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   max-width: 1300px;
   padding: 10px;
@@ -199,6 +199,8 @@ header {
   .nav-links-secondary {
     gap: 2rem;
     font-size: 1.5rem;
+    width: 100%;
+    justify-content: space-evenly;
   }
 
   .shopping-cart-link {
@@ -409,6 +411,10 @@ header {
   .whats-new-container {
     flex-direction: column-reverse;
   }
+
+  .whats-new-left {
+    gap: 1em;
+  }
 }
 /*----------/WHAT'S NEW-SECTION----------*/
 /*----------EXCLUSIVE-SECTION----------*/
@@ -599,8 +605,15 @@ header {
   text-align: center;
 }
 
-.footer-logo {
+.footer-logo img {
   width: 170px;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-logo img:hover,
+.footer-logo img:focus {
+  filter: invert(57%) sepia(91%) saturate(1899%) hue-rotate(156deg)
+    brightness(100%) contrast(103%);
 }
 
 @media (max-width: 900px) {
