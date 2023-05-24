@@ -61,12 +61,12 @@ body {
 }
 
 .space-bg {
-  background: url(/images/page-background-space.png) no-repeat center;
+  background: url(../images/page-background-space.png) no-repeat center;
   background-size: cover;
 }
 
 .space-bg-long {
-  background: url(/images/space-bg-long.png) no-repeat center;
+  background: url(../images/space-bg-long.png) no-repeat center;
   background-size: cover;
 }
 /*----------/MAIN STYLING----------*/
@@ -76,7 +76,7 @@ body {
 header {
   position: sticky;
   top: 0;
-  background: url(/images/page-background-space.png) center top;
+  background: url(../images/page-background-space.png) center top;
   background-size: cover;
   z-index: 1;
 }
@@ -164,7 +164,7 @@ header {
     position: fixed;
     inset: 0 0 0 40%;
     padding: 5em 0;
-    background: url(/images/page-background-space.png) no-repeat top center;
+    background: url(../images/page-background-space.png) no-repeat top center;
     width: auto;
     gap: 2.5rem;
     z-index: 1000;
@@ -199,7 +199,7 @@ header {
     position: absolute;
     z-index: 9999;
     background-color: transparent;
-    background-image: url(/images/menu-svgrepo-com.svg);
+    background-image: url(../images/menu-svgrepo-com.svg);
     background-repeat: no-repeat;
     width: 2rem;
     height: 2rem;
@@ -209,13 +209,13 @@ header {
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
-    background-image: url(/images/close-svgrepo-com.svg);
+    background-image: url(../images/close-svgrepo-com.svg);
   }
 }
 
 @media (max-width: 400px) {
   .nav-logo img {
-    content: url(/images/blast-off-logo-white.png);
+    content: url(../images/blast-off-logo-white.png);
     width: 28px;
   }
 
@@ -338,7 +338,7 @@ header {
 
 /*----------/FOOTER-SECTION----------*/
 .footer {
-  background: url(/images/footer-background-space.png) no-repeat center top;
+  background: url(../images/footer-background-space.png) no-repeat center top;
   background-size: cover;
   padding: 4.5em 0 1.5em;
 }
