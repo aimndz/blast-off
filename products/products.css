@@ -448,7 +448,7 @@ header {
   position: relative;
   height: 80vh;
   background-color: linear-gradient(to bottom, white, rgba(30, 16, 32, 0));
-  background: url(/images/product-img-main.png) no-repeat center;
+  background: url(../images/product-img-main.png) no-repeat center;
   background-size: cover;
   color: white;
   font-family: "Bebas Neue";
