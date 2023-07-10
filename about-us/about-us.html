@@ -11,13 +11,14 @@
     <title>BLAST-OFF</title>
     <link rel="stylesheet" href="about-us.css" />
     <script src="../index.js" defer></script>
+    <script src="../search.js" defer></script>
   </head>
   <body>
     <header id="nav">
       <nav class="main-nav container">
         <div class="nav-logo">
-          <a href="../index.html">
-            <img src="../images/blast-off-logo-white-with-text.png" alt="" />
+          <a href="/index.html">
+            <img src="/images/blast-off-logo-white-with-text.png" alt="" />
           </a>
         </div>
         <button
@@ -27,19 +28,32 @@
         ></button>
         <div id="nav-links" class="nav-links" data-visible="false">
           <ul class="nav-links-primary">
-            <li><a href="#">Products</a></li>
-            <li><a href="../whats-hot/whats-hot.html">What's Hot</a></li>
+            <li><a href="/products/products.html">Products</a></li>
+            <li><a href="/whats-hot/whats-hot.html">What's Hot</a></li>
             <li><a href="#">About Us</a></li>
           </ul>
           <ul class="nav-links-secondary">
             <li class="profile-icon">
-              <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+              <a href="/account/log-in.html"
+                ><i class="fa-regular fa-circle-user"></i
+              ></a>
             </li>
             <li class="search-icon">
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href="#"
+                ><i id="search-icon" class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <div class="search-wrapper">
+                <div class="search-container">
+                  <i
+                    class="fa-solid fa-magnifying-glass search-icon-inside"
+                  ></i>
+                  <input id="search-input" class="search-box" type="search" />
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
             </li>
             <li class="shopping-cart">
-              <a href="#" class="shopping-cart-link">
+              <a href="/cart/cart.html" class="shopping-cart-link">
                 <svg
                   width="20px"
                   height="20px"
@@ -47,14 +61,10 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   class="shopping-cart-svg"
-                  stroke="##fefffe"
+                  stroke="#fefffe"
                   stroke-width="1.3"
                 >
-                  <g
-                    id="SVGRepo_bgCarrier"
-                    stroke="##fefffe"
-                    stroke-width="3"
-                  />
+                  <g id="SVGRepo_bgCarrier" stroke="#fefffe" stroke-width="3" />
 
                   <g
                     id="SVGRepo_tracerCarrier"
@@ -116,11 +126,11 @@
             <div class="founders">
               <div class="founders-container">
                 <div class="about-us-amiel">
-                  <img src="../images/categories/gaming-chairs.png" alt="" />
+                  <img src="../images/amiel formal 1x1.png" alt="" />
                   <p>Amiel Ian Mendoza</p>
                 </div>
                 <div class="about-us-basti">
-                  <img src="../images/categories/keyboards.png" alt="" />
+                  <img src="../images/basti 1x1 formal.jpg.png" alt="" />
                   <p>Sebastian Peter Alarcon</p>
                 </div>
               </div>
@@ -130,20 +140,49 @@
       </div>
     </main>
 
-    <section>
+    <footer>
       <div class="footer">
         <div class="container">
           <div class="footer-links">
             <div class="footer-links-products">
               <h4 class="footer-links-heading">Products</h4>
               <ul>
-                <li><a href="#">Mice</a></li>
-                <li><a href="#">Keyboards</a></li>
-                <li><a href="#">Headsets</a></li>
-                <li><a href="#">Mousepads</a></li>
-                <li><a href="#">Monitors</a></li>
-                <li><a href="#">Microphones</a></li>
-                <li><a href="#">Gaming chairs</a></li>
+                <li>
+                  <a href="/category/mouse-category/mouse-category.html"
+                    >Mice</a
+                  >
+                </li>
+                <li>
+                  <a href="/category/keyboard-category/keyboard-category.html"
+                    >Keyboards</a
+                  >
+                </li>
+                <li>
+                  <a href="/category/headset-category/headset-category.html"
+                    >Headsets</a
+                  >
+                </li>
+                <li>
+                  <a href="/category/mousepad-category/mousepad-category.html"
+                    >Mousepads</a
+                  >
+                </li>
+                <li>
+                  <a href="/category/monitor-category/monitor-category.html"
+                    >Monitors</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/category/microphone-category/microphone-category.html"
+                    >Microphones</a
+                  >
+                </li>
+                <li>
+                  <a href="/category/gaming-chair-category/gaming-chair.html"
+                    >Gaming chairs</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="footer-links-contact">
@@ -177,9 +216,9 @@
           </div>
           <div class="copyright">
             <div class="footer-logo">
-              <a href="../index.html"
-                ><img src="../images/blast-off-logo-white-with-text.png" alt=""
-              /></a>
+              <a href="/index.html">
+                <img src="/images/blast-off-logo-white-with-text.png" alt="" />
+              </a>
             </div>
             <div class="copyright-text">
               <p>Copyright © 2023 Blast-Off. All rights reserved.</p>
@@ -187,6 +226,6 @@
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   </body>
 </html>

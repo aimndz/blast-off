@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200;400;500;700&display=swap");
+
 /*----------CUSTOM PROPERTIES----------*/
 :root {
   --clr-primary-100: #fefffe;
@@ -142,8 +144,95 @@ header {
   text-transform: uppercase;
 }
 
+.active {
+  position: absolute;
+  bottom: -127px;
+}
+
+.search-wrapper {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: -125px;
+  background-color: #1e1020;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.search-wrapper .fa-xmark {
+  color: var(--clr-primary-100);
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  cursor: pointer;
+}
+
+.search-container {
+  position: relative;
+  width: 40%;
+}
+
+.search-box {
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 1.3rem;
+  background-color: #1e1020;
+  border: 1px solid var(--clr-primary-100);
+  color: var(--clr-primary-100);
+  padding: 1em 3em 1em;
+  outline: none;
+}
+
+.search-box::-webkit-search-cancel-button {
+  background-color: red;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.search-icon-inside {
+  cursor: pointer;
+  position: absolute;
+  color: var(--clr-primary-100);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+.search-wrapper {
+  display: none;
+}
+
+.search-wrapper.show {
+  display: flex;
+}
 .shopping-cart {
   transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.shopping-cart::after {
+  content: var(--cart-content, "0");
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  width: 23px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--clr-accent-500);
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: var(--clr-primary-100);
 }
 
 .shopping-cart path {
@@ -283,7 +372,7 @@ header {
 }
 
 .about-us-text p {
-  font-weight: 200;
+  font-weight: 500;
   font-size: 1.2rem;
   line-height: 1.8rem;
   letter-spacing: 1px;
