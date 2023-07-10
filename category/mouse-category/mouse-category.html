@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d4c70ebaf1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>BLAST-OFF</title>
+    <link rel="stylesheet" href="../category.css" />
+    <script src="/index.js" defer></script>
+    <script src="/search.js" defer></script>
+  </head>
+  <body>
+    <header id="nav">
+      <nav class="main-nav container">
+        <div class="nav-logo">
+          <a href="/index.html">
+            <img src="/images/blast-off-logo-white-with-text.png" alt="" />
+          </a>
+        </div>
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="nav-links"
+          aria-expanded="false"
+        ></button>
+        <div id="nav-links" class="nav-links" data-visible="false">
+          <ul class="nav-links-primary">
+            <li><a href="/products/products.html">Products</a></li>
+            <li><a href="#">What's Hot</a></li>
+            <li><a href="/about-us/about-us.html">About Us</a></li>
+          </ul>
+          <ul class="nav-links-secondary">
+            <li class="profile-icon">
+              <a href="/account/log-in.html"
+                ><i class="fa-regular fa-circle-user"></i
+              ></a>
+            </li>
+            <li class="search-icon">
+              <a href="#"
+                ><i id="search-icon" class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <div class="search-wrapper">
+                <div class="search-container">
+                  <i
+                    class="fa-solid fa-magnifying-glass search-icon-inside"
+                  ></i>
+                  <input id="search-input" class="search-box" type="search" />
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
+            </li>
+            <li class="shopping-cart">
+              <a href="/cart/cart.html" class="shopping-cart-link">
+                <svg
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="shopping-cart-svg"
+                  stroke="#fefffe"
+                  stroke-width="1.3"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke="#fefffe" stroke-width="3" />
+
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.7351 14.0181C8.91085 13.6985 9.24662 13.5 9.61132 13.5H16.47C17.22 13.5 17.88 13.09 18.22 12.47L21.6008 6.33041C21.7106 6.13097 21.7448 5.91025 21.7129 5.70131C21.8904 5.52082 22 5.27321 22 5C22 4.44772 21.5523 4 21 4H6C5.96703 4 5.93443 4.0016 5.90228 4.00471L5.7317 3.64435C5.40095 2.94557 4.69708 2.5 3.92398 2.5H2.92004C2.36776 2.5 1.92004 2.94772 1.92004 3.5C1.92004 4.05228 2.36776 4.5 2.92004 4.5H3.14518C3.6184 4.5 4.04931 4.77254 4.25211 5.20011L7.08022 11.1627C7.35632 11.7448 7.33509 12.4243 7.02318 12.988L6.17004 14.53C5.44004 15.87 6.40004 17.5 7.92004 17.5H18.92C19.4723 17.5 19.92 17.0523 19.92 16.5C19.92 15.9477 19.4723 15.5 18.92 15.5H9.61131C8.85071 15.5 8.36855 14.6845 8.7351 14.0181ZM17.0408 10.4677L19.5108 6H6.84671L8.90839 10.3557C9.23914 11.0544 9.94301 11.5 10.7161 11.5H15.2905C16.0183 11.5 16.6886 11.1046 17.0408 10.4677Z"
+                      fill="#fefffe"
+                    />
+                    <path
+                      d="M7.92005 18.5C6.82005 18.5 5.93005 19.4 5.93005 20.5C5.93005 21.6 6.82005 22.5 7.92005 22.5C9.02005 22.5 9.92005 21.6 9.92005 20.5C9.92005 19.4 9.02005 18.5 7.92005 18.5Z"
+                      fill="#fefffe"
+                    />
+                    <path
+                      d="M17.9201 18.5C16.8201 18.5 15.9301 19.4 15.9301 20.5C15.9301 21.6 16.8201 22.5 17.9201 22.5C19.0201 22.5 19.9201 21.6 19.9201 20.5C19.9201 19.4 19.0201 18.5 17.9201 18.5Z"
+                      fill="#fefffe"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="categories-container container">
+        <div class="categories">
+          <h2>Categories</h2>
+          <ul>
+            <li class="category">
+              <a href="../exclusive/exclusive.html">
+                <div class="category-container">
+                  <p class="category-name">Exclusive</p>
+                  <p class="category-quantity">(3)</p>
+                </div>
+              </a>
+            </li>
+            <li class="category selected-category">
+              <a href="#">
+                <div class="category-container">
+                  <p class="category-name">Mice</p>
+                  <p class="category-quantity">(9)</p>
+                </div>
+              </a>
+            </li>
+            <li class="category">
+              <a href="../keyboard-category/keyboard-category.html">
+                <div class="category-container">
+                  <p class="category-name">Keyboards</p>
+                  <p class="category-quantity">(9)</p>
+                </div>
+              </a>
+            </li>
+            <li class="category">
+              <a href="../headset-category/headset-category.html">
+                <div class="category-container">
+                  <p class="category-name">Headsets</p>
+                  <p class="category-quantity">(9)</p>
+                </div>
+              </a>
+            </li>
+            <li class="category">
+              <a href="../monitor-category/monitor-category.html">
+                <div class="category-container">
+                  <p class="category-name">Monitors</p>
+                  <p class="category-quantity">(9)</p>
+                </div>
+              </a>
+            </li>
+            <li class="category">
+              <a href="../mousepad-category/mousepad-category.html">
+                <div class="category-container">
+                  <p class="category-name">Mousepads</p>
+                  <p class="category-quantity">(9)</p>
+                </div>
+              </a>
+            </li>
+            <li class="category">
+              <a href="../microphone-category/microphone-category.html">
+                <div class="category-container">
+                  <p class="category-name">Microphones</p>
+                  <p class="category-quantity">(9)</p>
+                </div>
+              </a>
+            </li>
+            <li class="category">
+              <a href="../gaming-chair-category/gaming-chair.html">
+                <div class="category-container">
+                  <p class="category-name">Gaming chairs</p>
+                  <p class="category-quantity">(9)</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="category-main">
+          <div class="category-main-text">
+            <h1>Gaming Mouse</h1>
+            <p>
+              Blast-off has designed a wired and wireless gaming mouse for every
+              gamer and they're built for gaming precision with optical tracking
+              sensors and hyper durable materials.
+            </p>
+          </div>
+          <div class="category-cards">
+            <a href="../exclusive/exclusive-items/ben10-mouse.html">
+              <div class="category-card exclusive">
+                <img
+                  src="/images/exclusive/ben10-blast-off-mouse.png"
+                  alt=""
+                  class="category-card-img"
+                />
+                <div class="category-card-content">
+                  <div class="category-card-upper">
+                    <h3 class="category-card-title">
+                      BEN 10 MOUSE (BLAST-OFF)
+                    </h3>
+                    <p class="category-card-description">
+                      Smooth and Precise Tracking Alien-tech Mouse
+                    </p>
+                  </div>
+                  <div class="category-card-lower">
+                    <div class="category-card-price">₱ 3,000.00</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="mouse-items/glorious-model-d.html">
+              <div class="category-card new">
+                <img
+                  src="/images/content-images/mouse/glorious_gaming_mouse_model_d_wi.png"
+                  alt=""
+                  class="category-card-img"
+                />
+                <div class="category-card-content">
+                  <div class="category-card-upper">
+                    <h3 class="category-card-title">
+                      GLORIOUS MODEL D WIRELESS
+                    </h3>
+                    <p class="category-card-description">
+                      Proprietary BAMF Sensor that redefines what is possible in
+                      a gaming mouse.
+                    </p>
+                  </div>
+                  <div class="category-card-lower">
+                    <div class="category-card-price">₱ 3,850.00</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="mouse-items/rog-strix-impact-wireless.html">
+              <div class="category-card discount">
+                <img
+                  src="/images/content-images/mouse/rog-strix-impact-ii-wireless.png"
+                  alt=""
+                  class="category-card-img"
+                />
+                <div class="category-card-content">
+                  <div class="category-card-upper">
+                    <h3 class="category-card-title">
+                      ROG Strix Impact II Wireless
+                    </h3>
+                    <p class="category-card-description">
+                      Industry-leading 16,000 dpi, 400 ips optical sensor
+                    </p>
+                  </div>
+                  <div class="category-card-lower">
+                    <div>
+                      <p class="category-card-price">₱ 3,690.00</p>
+                      <p class="category-previous-price">₱ 4,100.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="mouse-items/razer-basilisk-v3-pro.html">
+              <div class="category-card">
+                <img
+                  src="/images/content-images/mouse/razer_basilisk_ultimate.png"
+                  alt=""
+                  class="category-card-img"
+                />
+                <div class="category-card-content">
+                  <div class="category-card-upper">
+                    <h3 class="category-card-title">Razer Basilisk v3 Pro</h3>
+                    <p class="category-card-description">
+                      Armed to the teeth with industry-leading technology
+                    </p>
+                  </div>
+                  <div class="category-card-lower">
+                    <div class="category-card-price">₱ 6,955.00</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="mouse-items/steelseries-aerox-3.html">
+              <div class="category-card">
+                <img
+                  src="/images/content-images/mouse/steelseries-aerox-3.png"
+                  alt=""
+                  class="category-card-img"
+                />
+                <div class="category-card-content">
+                  <div class="category-card-upper">
+                    <h3 class="category-card-title">Steelseries aerox 3</h3>
+                    <p class="category-card-description">
+                      Ultra-lightweight Wireless Ergonomic Esports Mouse
+                    </p>
+                  </div>
+                  <div class="category-card-lower">
+                    <div class="category-card-price">₱ 2,950.00</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="mouse-items/rakk-talan-air.html">
+              <div class="category-card">
+                <img
+                  src="/images/content-images/mouse/rakk-talan-air.png"
+                  alt=""
+                  class="category-card-img"
+                />
+                <div class="category-card-content">
+                  <div class="category-card-upper">
+                    <h3 class="category-card-title">RAKK TALAN AIR</h3>
+                    <p class="category-card-description">
+                      Precise wireless gaming limitless customization gaming
+                      mouse
+                    </p>
+                  </div>
+                  <div class="category-card-lower">
+                    <div class="category-card-price">₱ 1,950.00</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="mouse-items/logitech-g502-lightspeed.html">
+              <div class="category-card">
+                <img
+                  src="/images/content-images/mouse/logitech-g502.png"
+                  alt=""
+                  class="category-card-img"
+                />
+                <div class="category-card-content">
+                  <div class="category-card-upper">
+                    <h3 class="category-card-title">
+                      LOGITECH G502 LIGHTSPEED
+                    </h3>
+                    <p class="category-card-description">
+                      G502 design meets pro-grade LIGHTSPEED wireless for
+                      ultra-fast, reliable connectivity.
+                    </p>
+                  </div>
+                  <div class="category-card-lower">
+                    <div class="category-card-price">₱ 6,995.00</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="mouse-items/glorious-model-o.html">
+              <div class="category-card">
+                <img
+                  src="/images/content-images/mouse/glorious_gaming_mouse_model_o.png"
+                  alt=""
+                  class="category-card-img"
+                />
+                <div class="category-card-content">
+                  <div class="category-card-upper">
+                    <h3 class="category-card-title">GLORIOUS MODEL O</h3>
+                    <p class="category-card-description">
+                      Ambidextrous ultralight weight gaming mouse ideal for pro
+                      hands.
+                    </p>
+                  </div>
+                  <div class="category-card-lower">
+                    <div class="category-card-price">₱ 2,900.00</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="mouse-items/rog-gladius-ii-origin.html">
+              <div class="category-card">
+                <img
+                  src="/images/content-images/mouse/rog-gladius ii.png"
+                  alt=""
+                  class="category-card-img"
+                />
+                <div class="category-card-content">
+                  <div class="category-card-upper">
+                    <h3 class="category-card-title">ROG Gladius II Origin</h3>
+                    <p class="category-card-description">
+                      Ergonomic wired optical gaming mouse optimized for FPS,
+                      featuring Aura Sync
+                    </p>
+                  </div>
+                  <div class="category-card-lower">
+                    <div class="category-card-price">₱ 5,200.00</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="footer-links">
+            <div class="footer-links-products">
+              <h4 class="footer-links-heading">Products</h4>
+              <ul>
+                <li>
+                  <a href="/category/mouse-category/mouse-category.html"
+                    >Mice</a
+                  >
+                </li>
+                <li>
+                  <a href="/category/keyboard-category/keyboard-category.html"
+                    >Keyboards</a
+                  >
+                </li>
+                <li>
+                  <a href="/category/headset-category/headset-category.html"
+                    >Headsets</a
+                  >
+                </li>
+                <li>
+                  <a href="/category/mousepad-category/mousepad-category.html"
+                    >Mousepads</a
+                  >
+                </li>
+                <li>
+                  <a href="/category/monitor-category/monitor-category.html"
+                    >Monitors</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/category/microphone-category/microphone-category.html"
+                    >Microphones</a
+                  >
+                </li>
+                <li>
+                  <a href="/category/gaming-chair-category/gaming-chair.html"
+                    >Gaming chairs</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links-contact">
+              <h4 class="footer-links-heading">Contact</h4>
+              <ul>
+                <li>
+                  <p>
+                    <span class="footer-sub-heading">Address:</span> General
+                    Trias City, Cavite
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="footer-sub-heading">Phone:</span> 09123456789
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="footer-sub-heading">Hours:</span> 8:00-18:00.
+                    Mon-Sat
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links-about">
+              <h4 class="footer-links-heading">About</h4>
+              <ul>
+                <li><a href="/about-us/about-us.html">About us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">
+            <div class="footer-logo">
+              <a href="/index.html">
+                <img src="/images/blast-off-logo-white-with-text.png" alt="" />
+              </a>
+            </div>
+            <div class="copyright-text">
+              <p>Copyright © 2023 Blast-Off. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
