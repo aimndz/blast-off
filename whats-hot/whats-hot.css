@@ -80,7 +80,7 @@ body {
 }
 
 .space-bg {
-  background: url(/images/page-background-space.png) no-repeat center;
+  background: url(../images/page-background-space.png) no-repeat center;
   background-size: cover;
 }
 
